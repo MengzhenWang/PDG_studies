@@ -1,0 +1,59 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{mathrsfs}  
+\usepackage{CJK}  
+\usepackage{amsmath}  
+
+\begin{document}
+For the $\Sigma_c \to \Lambda_c^+ \pi^-$ resonant states in the $\Lambda_b^0 \to \Lambda_c^+ p \bar{p} \pi^-$ decays. 
+\section{The decay amplitude}
+According to PDG, the decay amplitude can be written as  
+\begin{equation}
+\mathscr{M} \propto \frac{1}{M_{0}^2-m^2 -iM_{0}\Gamma(m)} q^L F_{L}(q,q_0), 
+\end{equation} 
+where $M_{0}$ is the PDG mass of the resonant state, $m$ is the $\Lambda_c^+ \pi^-$ invariant 
+mass, $\Gamma(m)$ is the mass-dependent width, $q$ is the momentum of the $\Lambda_c^+$ baryon 
+in the $\Sigma_c$ rest frame, $L$ is the orbit angular momentum, $F_{L}(q,q_0)$ is a phenomenological 
+form factor, and is choosen to be a Blatt-Weisskopf form in our analysis.
+The mass-dependent width can also be found in the "Resonance" chapter of PDG, namely, 
+\begin{equation}
+\Gamma(m) = \Gamma_0 \times \left(\frac{q}{q_0}\right)^{2L+1}\frac{M_0}{m}B_L(q,q_0,d)^2. 
+\end{equation}  
+
+The decay amplitude gives the probability amplitude in the phase space, 
+\begin{equation}
+d\Gamma = \frac{2\pi}{M} \left|M\right|^2 d\Phi_n(P; p_1, ..., p_n), 
+\end{equation}
+where $M$ is the invariant mass of the primary particle, which decays to $n$ final-state 
+particles, $\Phi_n$ is the phase space, $P$ stands for the four-momentum of the primary particle, 
+and $p_i$ is the four-momentum of the $i_{th}$ final-state particle.
+
+Now we need to propagate the probability density function in four-body phase space to 
+the probability density function of the $\Lambda_c^+ \pi^-$ invariant mass. 
+
+\section{PDF of invariant mass}
+In the decay $\Lambda_b^0 \to \Lambda_c^+ p \bar{p} \pi^-$, we label $\Lambda_c^+$ as particle 1, 
+$\pi^-$ as particle 2, $\bar{p}$ as particle 3, and $p$ as particle 4.   
+
+The defination of the $n$ body phase space element is given by 
+\begin{equation}
+d\Phi_n(P; p_1, ..., p_n) = \delta^4(P-\sum^n_{i=1} p_i) \prod_{i=1}^n \frac{d^3 p_i}{(2\pi)^3 2 E_i}. 
+\end{equation} 
+
+Using this definition, we can get 
+\begin{align*}
+& d\Phi_3(q;p_1,p_2,p_3)\times d\Phi_2(P;q,p_4) (2\pi)^3 dq^2 \\
+&= \delta^4(q-\sum_{i=1}^3 p_i) \delta^4(P-q-q_4) (2\pi)^3  \prod_{i=1}^4 \frac{d^3p_i}{(2\pi)^3 2E_i}  dq^2 \frac{d^3q}{(2\pi)^3 2E_q} \\
+&= \delta^4(q-\sum_{i=1}^4 p_i) \delta^4(P-q-q_4) (2\pi)^3  \prod_{i=1}^4 \frac{d^3p_i}{(2\pi)^3 2E_i}  \\
+&= d\Phi_4(P;p_1,p_2,p_3,p_4) 
+\end{align*}
+where $q$ is the sum of four-momentum of particle 1, 2 and 3, and the Jacobi determinant is used for the 
+transformation from $dq^2 d^3q$ to $d^4q$.   
+
+According to "kinematic" chapter of PDG, Equation 48.20, the term $d\Phi_3(q;p_1,p_2,p_3)\times$ is proportional 
+to $\frac{1}{q} p_1^* dm_{12}$, where $p_1^*$ is the momentum of $\Lambda_c^+$ in the $\Sigma_c$ rest frame. After the 
+integration on the decay angles of the "1,2,3" system, and on $q$ and $p_4$, the PDF of invariant mass can be obtained: 
+\begin{equation}
+d\Gamma  = 
+\end{equation} 
+
+\end{document}
